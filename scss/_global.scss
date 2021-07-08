@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+}
+
+body{	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #1E1E1E;
+
+}
+
+.body--hid{
+	overflow: hidden;
+}
+
+a{
+	color: inherit;
+}
+
+button{
+	cursor: pointer;
+}
+
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// ативаици
+
+// Города в header
+.activ--city{
+	display: block;
+}
+
+// Личный кабинет
+.activ--cabit{
+	display: flex;
+}

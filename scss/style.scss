@@ -1,0 +1,99 @@
+
+@import 'vars';
+@import 'preloader';
+@import 'animation';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'header';
+@import 'footer';
+
+@import 'global';
+
+
+.slider{
+	margin-bottom: 70px;
+	&__items{
+		position: relative;
+	}
+	&__box{
+		border-radius: 2px;
+		background: url(../images/slider-1.jpg) right bottom no-repeat;
+		padding: 100px;
+	}
+	&__box-title{
+		color: #fff;
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 50px;
+		max-width: 480px;
+		margin-bottom: 20px;
+
+	}
+	&__box-text{
+		color: #fff;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 55px;
+		margin-bottom: 50px;
+	}
+	&__box-btn{
+		color: rgba(28, 80, 143, 0.95);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 35px;
+		background: #fff;
+		padding: 15px 45px;
+		border-radius: 30px;
+		border: 2px solid #fff;
+		&:hover{
+			color: #fff;
+			background: transparent;
+		}
+	}
+	// переключатель
+	&__row{
+		padding: 5px;
+		background: transparent;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		top: 45%;
+		transform: translateY(-50%);    
+		z-index: 20;
+	}
+	&-fill{
+		fill: #fff;
+	}
+	&__row-l{
+		left: 13px;
+	}
+	&__row-r{
+		right: 13px;
+	}
+}
+
+.slick-dots{
+	position: absolute;
+	bottom: 25px;
+	display: flex;
+	left: 40%;
+	transform: transleteX(-50%);	
+	& button{
+		width: 14px;
+		height: 14px;
+		font-size: 0;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		background: transparent;
+		margin: 0 4px;
+	}
+}
+
+.slick-active button{
+	background: #fff;
+}
+
+@import 'media';
